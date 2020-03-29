@@ -1,2 +1,4 @@
 github.com/hoisie/web v0.1.0 h1:oCXxaS9BnWgJZsubx4X+NuOyKPc9y4kB8Eg0jof6SUc=
 github.com/hoisie/web v0.1.0/go.mod h1:9rKIjxNOF05p21HiYMbaQy+ijn3nHaWi2mV3l/KnoIE=
+github.com/luscas/api-golang v0.0.0-20200329232110-aaccdb9f16bd h1:BvkEYhi2LZ1P2CRFKuu+X1tjMSB9C6NsnsgcnvmwDNU=
+github.com/luscas/api-golang v0.0.0-20200329232110-aaccdb9f16bd/go.mod h1:FJRG7yhciciczWBgfKWxZRbgC25V16lcyCzBd+A8pYs=

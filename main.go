@@ -1,36 +1,28 @@
 package main
 
 import (
-	"io/ioutil"
-	"net/http"
-
 	"github.com/hoisie/web"
-
 	"github.com/luscas/api-golang/controllers"
 )
-
-func HomePage() string {
-	return "API GoLang"
-}
 
 func FindUser(id string) string {
 	return "User ID: " + id
 }
 
-func Radio() string {
-	response, erro := http.Get("https://painel.audiovox.pw/api-json/Njc2OCsw")
-	if erro != nil {
-		panic(erro)
-	}
+// func Radio() string {
+// 	response, erro := http.Get("https://painel.audiovox.pw/api-json/Njc2OCsw")
+// 	if erro != nil {
+// 		panic(erro)
+// 	}
 
-	responseJson, erro := ioutil.ReadAll(response.Body)
+// 	responseJson, erro := ioutil.ReadAll(response.Body)
 
-	if erro != nil {
-		panic(erro)
-	}
+// 	if erro != nil {
+// 		panic(erro)
+// 	}
 
-	return string(responseJson)
-}
+// 	return string(responseJson)
+// }
 
 func main() {
 	web.Get("/", controllers.HelloWorld)

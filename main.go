@@ -11,7 +11,7 @@ import (
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		panic("$PORT not set")
+		port = "5000"
 	}
 
 	// Echo instance

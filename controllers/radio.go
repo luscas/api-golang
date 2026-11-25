@@ -10,7 +10,7 @@ import (
 func Radio(c echo.Context) error {
 	response, erro := http.Get("https://painel.audiovox.pw/api-json/Njc2OCsw")
 	if erro != nil {
-		panic(erro)
+		c.String(http.StatusInternalServerError, string(erro.Error()))
 	}
 
 	responseJson, erro := ioutil.ReadAll(response.Body)
